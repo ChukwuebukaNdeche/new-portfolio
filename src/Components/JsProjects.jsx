@@ -52,7 +52,7 @@ function JsProjects() {
 
                     <div className=" col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/blackjack.png'
+                            img={`${import.meta.env.BASE_URL}/images/blackjack.png`}
                             title='BlackJack Project'
                             text='Experience the thrill of the casino with this dynamic Blackjack game! Built using
                                   HTML, CSS, and JavaScript, this project combines sleek design with interactive
@@ -80,7 +80,7 @@ function JsProjects() {
 
                     <div className=" col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/people_counter.png'
+                            img={`${import.meta.env.BASE_URL}/images/people_counter.png`}
                             title='People Counter Project'
                             text='Keep track with ease using this intuitive People Counter! Built with
                                     HTML, CSS, and JavaScript, this project allows users to count and manage entries
@@ -119,7 +119,7 @@ function JsProjects() {
 
                     <div className=" col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/Navbar.png'
+                            img={`${import.meta.env.BASE_URL}/images/Navbar.png`}
                             title='Navbar Project'
                             text='A fully responsive navigation bar built using HTML, CSS, and JavaScript. Designed to
                                     adapt seamlessly across different screen sizes, it ensures smooth navigation and a

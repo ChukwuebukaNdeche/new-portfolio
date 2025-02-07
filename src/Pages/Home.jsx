@@ -71,7 +71,7 @@ function Home() {
     return (<>
         <div>
             <div className='profile_img_cont'>
-                <img src={`${process.env.PUBLIC_URL}/images/100kb.jpg`} alt="profile-img" className='profileImg' />
+                <img src={`${import.meta.env.BASE_URL}/images/100kb.jpg`} alt="profile-img" className='profileImg' />
             </div>
             <div className='right_content'>
                 {/*************** Intro section ****************/}

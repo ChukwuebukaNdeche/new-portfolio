@@ -20,7 +20,7 @@ function About() {
             </div>
 
             <div className='about-profile_img_cont'>
-                <img src={`${process.env.PUBLIC_URL}/images/100kb.jpg`} alt="profile-img" className='aboutprofileImg' />
+                <img src={`${import.meta.env.BASE_URL}/images/100kb.jpg`} alt="profile-img" className='aboutprofileImg' />
             </div>
 
             <div className="row mt-4 mediaRow firstrow">
