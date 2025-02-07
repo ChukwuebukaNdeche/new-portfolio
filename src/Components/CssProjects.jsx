@@ -13,7 +13,7 @@ function CssProjects() {
 
                     <div className="col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/css_Cform.png'
+                            img={`${process.env.PUBLIC_URL}/images/css_cform.png`}
                             title='Contact Form'
                             text='A dynamic video background that can be paused or played with the click of a
                                 button. This project highlights the integration of HTML,
@@ -25,7 +25,7 @@ function CssProjects() {
 
                     <div className="col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/tesla.png'
+                            img={`${process.env.PUBLIC_URL}/images/tesla.png`}
                             title='Blog Project'
                             text='A dynamic video background that can be paused or played with the click of a
                                 button. This project highlights the integration of HTML,
@@ -37,7 +37,7 @@ function CssProjects() {
 
                     <div className="col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/html_table.png'
+                            img={`${process.env.PUBLIC_URL}/images/html_table.png`}
                             title='HTML Tags Table'
                             text='A dynamic video background that can be paused or played with the click of a
                                 button. This project highlights the integration of HTML,
@@ -49,7 +49,7 @@ function CssProjects() {
 
                     <div className="col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/music.png'
+                            img={`${process.env.PUBLIC_URL}/images/music.png`}
                             title='Music Site'
                             text='A dynamic video background that can be paused or played with the click of a
                                 button. This project highlights the integration of HTML,
@@ -61,7 +61,7 @@ function CssProjects() {
 
                     <div className="col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/flexbox1.png'
+                            img={`${process.env.PUBLIC_URL}/images/flexbox1.png`}
                             title='Flexbox Project1'
                             text='A dynamic video background that can be paused or played with the click of a
                                 button. This project highlights the integration of HTML,
@@ -73,7 +73,7 @@ function CssProjects() {
 
                     <div className="col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/flexbox2.png'
+                            img={`${process.env.PUBLIC_URL}/images/flexbox2.png`}
                             title='Flexbox Project2'
                             text='A dynamic video background that can be paused or played with the click of a
                                 button. This project highlights the integration of HTML,
@@ -85,7 +85,7 @@ function CssProjects() {
 
                     <div className="col-md-6 mb-2">
                         <ProjectCard
-                            img='../public/images/myblog.png'
+                            img={`${process.env.PUBLIC_URL}/images/myblog.png`}
                             title='Myblog Project'
                             text='A dynamic video background that can be paused or played with the click of a
                                 button. This project highlights the integration of HTML,
