@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
 :root {
     --header-text: 'Montserrat', sans-serif;
     --normal-text: 'Open Sans', sans-serif;
@@ -174,7 +171,7 @@ body {
 
 /************** Opening section and hiding content ****************/
 .openSection {
-    width: 100%;
+    width: 100% !important;
     height: 100% !important;
     color: white;
     overflow-y: auto;
@@ -475,31 +472,30 @@ input:-webkit-autofill:active {
     }
 }
 @media (max-width: 767.5px) {
+    body {
+        padding: 5px;
+    }
     .openSection {
         top: 0 !important;
     }
     .sections {
-        width: calc(100% - 12.5px);
-        height: calc(20% - 12.5px);
+        width: 100%;
+        height: calc(20% - 6.25px);
     }
     .section1 {
         top: 0;
-        left: 6.25px;
         height: calc(40% - 37.5px);
     }
     
     .section2 {
-        top: calc(40% - 12.5px);
-        right: 6.25px;
+        top: calc(40% - 6.25px);
     }
     
     .section3 {
-        left: 6.25px;
-        bottom: calc(20% + 12.5px);
+        bottom: calc(20% + 6.25px);
     }
     
     .section4 {
-        right: 6.25px;
         bottom: 0;
     }
     .sections:hover .nav {
@@ -509,13 +505,18 @@ input:-webkit-autofill:active {
     .sections:hover .nav .colortext {
         color: inherit;
     }
+    .aboutPage, .contactPage, .portfolioPage {
+        padding: 5px;
+    }
     .about-profile_img_cont {
-        height: 600px;
+        height: 550px;
+        width: 50%;
     }
     .close-portfolioIcon {
         right: 35px;
     }
     .scroll {
+        top: 2px;
         right: 70px;
         padding: 5px;
     }
@@ -529,7 +530,7 @@ input:-webkit-autofill:active {
 
 @media (max-width: 600px) {
     .about-profile_img_cont {
-        width: calc(100% - 50px);
+        width: 98%;
     }
     .mediaRow {
         width: calc(100% + 25px);
