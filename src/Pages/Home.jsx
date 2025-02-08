@@ -69,7 +69,7 @@ function Home() {
 
 
     return (<>
-        <div>
+        <div className="page">
             <div className='profile_img_cont'>
                 <img src={`${import.meta.env.BASE_URL}/images/100kb.jpg`} alt="profile-img" className='profileImg' />
             </div>

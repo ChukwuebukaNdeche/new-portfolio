@@ -9,22 +9,29 @@
     --section-backgroung: rgb(37, 37, 37);
 }
 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
+
+.page {
     background-color: rgb(17, 17, 17);
-    padding: 25px;
+    width: 100vw;
+    height: 100vh;
 }
+
 
 /************** Home page ****************/
 .profile_img_cont {
     position: fixed;
-    width: calc(30% - 25px);
-    height: calc(100vh - 50px);
+    width: 30%;
+    height: 100%;
+    padding: 25px;
+    /*width: calc(30% - 25px);
+    height: calc(100% - 25px);*/
 }
 
 .profileImg {
@@ -36,7 +43,9 @@ body {
 .right_content {
     position: fixed;
     right: 25px;
-    width: calc(70% - 50px);
+    top: 25px;
+    height: 100%;
+    width: calc(70% - 25px);
     height: calc(100% - 50px);
 }
 
@@ -85,34 +94,38 @@ body {
     justify-content: center;
     align-items: center;
     -webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 /*animation focus-in-expand*/
 @-webkit-keyframes focus-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
+
 @keyframes focus-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 .colortext {
@@ -176,7 +189,7 @@ body {
     color: white;
     overflow-y: auto;
     cursor: default;
-    z-index: 100; 
+    z-index: 100;
 }
 
 .hide-content {
@@ -186,20 +199,28 @@ body {
 
 /************** About ****************/
 
-.about-content, .contact-content, .portfolio-content {
+.about-content,
+.contact-content,
+.portfolio-content {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
-.about-content.show, .contact-content.show, .portfolio-content.show {
+.about-content.show,
+.contact-content.show,
+.portfolio-content.show {
     opacity: 1;
 }
 
-.aboutPage, .contactPage, .portfolioPage {
+.aboutPage,
+.contactPage,
+.portfolioPage {
     padding: 25px;
 }
 
-.close-aboutIcon, .close-contactIcon, .close-portfolioIcon {
+.close-aboutIcon,
+.close-contactIcon,
+.close-portfolioIcon {
     position: fixed;
     right: 45px;
     top: 35px;
@@ -210,15 +231,20 @@ body {
     padding: 5px;
     cursor: pointer;
 }
+
 .close-portfolioIcon {
     right: 60px;
 }
 
-.aboutHeader, .contactHeader, .portfolioHeader {
+.aboutHeader,
+.contactHeader,
+.portfolioHeader {
     font-family: var(--header-text);
 }
 
-.addressCard, .addressBook, .briefCase {
+.addressCard,
+.addressBook,
+.briefCase {
     font-size: 20px;
     text-align: center;
 }
@@ -279,10 +305,12 @@ strong {
     margin-bottom: 15px;
     color: rgb(167, 167, 167);
 }
+
 .about-profile_img_cont {
     opacity: 0;
     display: none;
 }
+
 /************** Portfolio ****************/
 .scroll {
     background-color: rgba(8, 8, 8, 0.63);
@@ -296,6 +324,7 @@ strong {
     right: 100px;
     z-index: 100;
 }
+
 .projectScroll {
     font-family: var(--normal-text);
     font-size: var(--p-size);
@@ -307,31 +336,41 @@ strong {
     border: none;
     transition: all 0.3s ease;
 }
+
 .projectScroll:hover {
     color: orange;
 }
 
-.reactHead, .jsHead, .cssHead {
+.reactHead,
+.jsHead,
+.cssHead {
     color: var(--colortext);
     font-family: var(--header-text);
     font-weight: bold;
 }
-.react_sub_head, .card-text, .js_project_sub, .css_project_sub {
+
+.react_sub_head,
+.card-text,
+.js_project_sub,
+.css_project_sub {
     font-size: var(--p-size);
     font-family: var(--normal-text);
     color: white;
     text-align: justify;
 }
+
 .card {
     background-color: #2c2c2c;
-    border:1px solid #444;
+    border: 1px solid #444;
 }
+
 .card-title {
     font-family: var(--header-text);
     font-size: 16px;
     font-weight: bold;
     color: orange;
 }
+
 .project_btn {
     text-decoration: none;
     font-weight: bold;
@@ -340,17 +379,21 @@ strong {
     padding: 5px 15px;
     margin: 5px;
 }
+
 .view_btn {
     background-color: var(--colortext);
     color: white;
     margin-right: 10px;
 }
+
 .code_btn {
     background-color: transparent;
     border: 3px solid var(--colortext);
     color: var(--colortext);
 }
-.jslines, .csslines {
+
+.jslines,
+.csslines {
     background-color: var(--colortext);
     height: 1px;
     width: 100%;
@@ -361,56 +404,70 @@ strong {
     font-size: var(--p-size);
     font-family: var(--normal-text);
 }
+
 .contactLink {
     text-decoration: none;
     color: rgb(172, 172, 255);
     font-size: var(--p-size);
     font-family: var(--normal-text);
 }
+
 .leftContact-bg {
     background-color: rgb(17, 17, 17);
     padding: 15px;
     border: 1px solid rgb(78, 78, 78);
     overflow-wrap: break-word;
 }
+
 .fa-linkedin {
     color: rgb(68, 68, 255);
 }
+
 .fa-github {
     color: rgb(229, 229, 229);
 }
-.contact_form input, .contact_form textarea {
+
+.contact_form input,
+.contact_form textarea {
     background-color: transparent !important;
     color: white;
     border-color: rgb(91, 91, 91);
 }
-.contact_form input:focus, .contact_form textarea:focus {
+
+.contact_form input:focus,
+.contact_form textarea:focus {
     background-color: transparent !important;
     color: white !important;
     outline: none;
     box-shadow: none;
     border-color: var(--colortext);
 }
+
 .contact_form input:-webkit-autofill:hover {
     background-color: transparent;
 }
-.contact_form input::placeholder, .contact_form textarea::placeholder {
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder {
     color: rgb(98, 98, 98);
     font-size: 13px;
 }
+
 .form-label {
     font-size: var(--p-size);
     font-family: var(--normal-text);
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:active {
-  background-color: transparent !important;
-  color: white !important;
-  -webkit-text-fill-color: white !important;
-  transition: background-color 9999s ease-in-out 0s !important;
+    background-color: transparent !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 9999s ease-in-out 0s !important;
 }
+
 .contactBtn {
     background-color: var(--colortext);
     padding: 10px 20px;
@@ -422,9 +479,11 @@ input:-webkit-autofill:active {
     margin-top: 20px;
     transition: all 0.3s ease;
 }
+
 .contactBtn:hover {
     background-color: rgb(255, 186, 57);
 }
+
 .contactBtn:active {
     background-color: rgba(255, 166, 0, 0.437);
 }
@@ -434,17 +493,21 @@ input:-webkit-autofill:active {
     .myName {
         font-size: 25px;
     }
+
     .typing {
         font-size: 20px;
     }
 }
+
 @media (max-width: 999px) {
     .profile_img_cont {
         opacity: 0;
     }
+
     .right_content {
         width: calc(100% - 50px);
     }
+
     .about-profile_img_cont {
         display: block;
         opacity: 1;
@@ -454,75 +517,110 @@ input:-webkit-autofill:active {
         height: 470px;
         background-color: antiquewhite;
     }
+
     .aboutprofileImg {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: top;
     }
+
     .mediaRow {
         width: 50%;
         position: relative;
         right: calc(-50% - 25px);
     }
 }
+
 @media (max-width: 850px) {
     .about-profile_img_cont {
         height: 550px;
     }
 }
+
 @media (max-width: 767.5px) {
-    body {
-        padding: 5px;
-    }
+
+
     .openSection {
         top: 0 !important;
     }
+
+    .right_content {
+        right: 5px;
+        top: 10px;
+        width: calc(100% - 10px);
+        height: calc(100% - 20px);
+    }
+
     .sections {
         width: 100%;
         height: calc(20% - 6.25px);
     }
+
     .section1 {
         top: 0;
-        height: calc(40% - 37.5px);
+        height: calc(50% - 80px);
     }
-    
+
     .section2 {
-        top: calc(40% - 6.25px);
+        top: calc(40% - 0px);
     }
-    
+
     .section3 {
-        bottom: calc(20% + 6.25px);
+        bottom: calc(20% + 3px);
     }
-    
+
     .section4 {
         bottom: 0;
     }
+
     .sections:hover .nav {
         color: inherit;
     }
-    
+
     .sections:hover .nav .colortext {
         color: inherit;
     }
-    .aboutPage, .contactPage, .portfolioPage {
-        padding: 5px;
+
+    .aboutPage,
+    .contactPage,
+    .portfolioPage {
+        padding: 10px;
     }
+
     .about-profile_img_cont {
-        height: 550px;
-        width: 50%;
+        top: 160px;
+        height: 500px;
+        width: 51%;
     }
+
+    .close-aboutIcon,
+    .close-contactIcon {
+        right: 20px;
+        top: 20px;
+    }
+
     .close-portfolioIcon {
-        right: 35px;
+        right: 15px;
+        top: 20px;
     }
+
+    .miniHeader {
+        border: 1px solid rgb(78, 78, 78);
+        width: 97%;
+        margin: 20px auto;
+    }
+
     .scroll {
         top: 2px;
-        right: 70px;
+        right: 50px;
         padding: 5px;
     }
+
     .projectScroll {
         padding: 5px 10px;
     }
+
     .contactBtn {
         width: 100%;
     }
@@ -530,15 +628,23 @@ input:-webkit-autofill:active {
 
 @media (max-width: 600px) {
     .about-profile_img_cont {
-        width: 98%;
+        top: 140px;
+        width: 97%;
+        height: 600px;
     }
+
     .mediaRow {
         width: calc(100% + 25px);
         right: 0;
     }
+
     .firstrow {
         padding-top: 620px;
     }
 }
 
-
+@media (max-width: 550px) {
+    .about-profile_img_cont {
+        width: 96%;
+    }
+}
