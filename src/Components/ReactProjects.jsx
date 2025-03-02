@@ -1,4 +1,5 @@
 import ProjectCardVideo from "./PortfolioCardVideo"
+import ProjectCard from "./PortfolioCard" 
 
 function ReactProject() {
 
@@ -59,6 +60,16 @@ function ReactProject() {
                             href1="https://chukwuebukandeche.github.io/my-todo/"
                             href2="https://github.com/ChukwuebukaNdeche/my-todo"
                             link1='View Live' link2='Source Code' />
+                    </div>
+                    <div className="col-md-6 mb-2">
+                        <ProjectCard
+                            img={`${import.meta.env.BASE_URL}/images/porfolio.png`}
+                            title='First Portfolio'
+                            text='A Porfolio website built using react and bootstrap, making it responsive 
+                            and adjust to all screen sizes.'
+                            href1="https://chukwuebukandeche.github.io/portfolio-app/"
+                            href2={void(0)}
+                            link1='View Live' link2={<i className="fas fa-ban"></i>} />
                     </div>
                     <div className="col-md-6 mb-2">
                         <ProjectCardVideo
