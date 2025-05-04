@@ -20,4 +20,6 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEW_PORTFOLIO_33F66 }}
           projectId: new-portfolio-33f66
+          channelId: ${{ github.sha }}  # This uses the commit SHA as a unique channel ID
+
 
